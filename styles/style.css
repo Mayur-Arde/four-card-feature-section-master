@@ -24,6 +24,119 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: var(--veryLightGray);
+  color: var(--veryDarkBlue);
+  min-height: 100vh;
+  padding: 25px 0;
+}
+
+p{
+  color: var(--grayishBlue);
+}
+
+/* main .container */
+.container {
+  padding: 2rem;
+}
+
+/* top header .container */
+.top-container {
+  margin: 1rem 0 4rem;
+  text-align: center;
+}
+
+.top-container .heading{
+  font-weight: 200;
+  color: var(--veryDarkBlue);
+}
+
+.top-container h2{
+  font-size: 1.6rem;
+}
+
+.top-container p{
+  margin: 15px 0;
+}
+
+/* all cards */
+
+.all-cards{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  grid-gap:15px
+}
+.card{
+  background-color: white;
+  max-width: 300px;
+  border-radius: 5px;
+  padding: 1.67rem;
+  box-shadow: 0px 2px 4px 0px var(--grayishBlue);
+  position: relative;
+}
+
+.card-top-text h3{
+  font-weight: 600;
+}
+
+.card-top-text p{
+  line-height: 1.6;
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.card-img{
+  margin-top: 25px;
+  text-align: right;
+}
+
+.card-icon{
+  width: 50px;
+}
+
+/* card top color */
+.card-supervisor::before{
+  content: "";
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: var(--cyan);
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-team::before{
+  content: "";
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: var(--red);
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-karma::before{
+  content: "";
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: var(--orange);
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-calculator::before{
+  content: "";
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: var(--blue);
+  width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
 /* .attribution */

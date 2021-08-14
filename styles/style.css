@@ -75,7 +75,7 @@ p{
 .card{
   background-color: white;
   max-width: 300px;
-  height: 250px;
+  height: 215px;
   border-radius: 5px;
   padding: 1.67rem;
   box-shadow: 0px 2px 4px 0px var(--grayishBlue);
@@ -162,7 +162,11 @@ p{
   }
   
   .container{
-    padding: 10px;
+    padding: 30px 0;
+  }
+
+  .bottom-container{
+    margin-top: 30px;
   }
 
   .all-cards{
